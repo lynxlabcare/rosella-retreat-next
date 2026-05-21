@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Booking {
+  id          String   @id @default(uuid())
+  checkIn     DateTime
+  checkOut    DateTime
+  guestName   String
+  source      String   // e.g., "Website", "Manual", "Airbnb"
+  status      String   @default("CONFIRMED")
+  createdAt   DateTime @default(now())
+}
+
+model PriceOverride {
+  id     String   @id @default(uuid())
+  date   DateTime @unique
+  price  Int
+  reason String?
+}

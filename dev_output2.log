@@ -1,0 +1,689 @@
+
+> rosella-retreat-next@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.10:3000
+- Environments: .env
+✓ Ready in 229ms
+
+○ Compiling / ...
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+node(2851) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2852) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2853) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2854) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2855) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2856) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2946) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2947) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2948) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2949) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2950) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2951) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2952) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2953) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2954) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2955) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2956) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2957) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2958) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2959) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2960) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2961) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2962) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2963) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2964) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2965) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2966) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2967) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2968) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(2970) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3008) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3009) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3010) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3011) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3012) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3013) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3014) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3015) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3016) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3017) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3018) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3019) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3021) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3022) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3056) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3057) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3060) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3083) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3117) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3118) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3119) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3120) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3121) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3122) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3123) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3124) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3125) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3126) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3127) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3128) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3129) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3130) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3131) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3132) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3133) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3134) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3135) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3136) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3137) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3138) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3139) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3140) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3141) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3142) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3143) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3144) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3145) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3146) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3147) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3148) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3149) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3150) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3151) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3152) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3153) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3154) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3155) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3156) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3157) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3158) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3159) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3160) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3161) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3162) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3163) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3165) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3164) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3167) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3166) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3168) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3169) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3170) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3171) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3172) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3173) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3174) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3175) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3176) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3203) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3205) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3206) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3207) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3208) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3209) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3210) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3211) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3212) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3213) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3214) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3215) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3216) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3217) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3218) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3219) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3220) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3221) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3223) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3222) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3224) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3226) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3225) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3227) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3253) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3261) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3259) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3262) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3257) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3258) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3260) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3264) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3265) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3266) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3267) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3268) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3269) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3270) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3271) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3272) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3273) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3274) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3275) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3276) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3277) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3278) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3279) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3280) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3281) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3282) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3283) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3284) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3285) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3286) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3287) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3288) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3289) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3290) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3291) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3292) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Persisting failed: Unable to write SST file 00000386.sst
+
+Caused by:
+    0: Failed to write small value block
+    1: Failed to write block data
+    2: No space left on device (os error 28)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+node(3306) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+node(3353) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next or above\n' +
+    '  No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '  no extension\n' +
+    "    /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '  .css\n' +
+    "    /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '  as directory\n' +
+    "    /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+Error: ETIMEDOUT: connection timed out, read
+    [2m[at async readFileHandle (node:internal/fs/promises:553:24)][0m
+    [2m[at async Vt (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:4328)][0m
+    [2m[at async loadStylesheet (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:2960)][0m
+    [2m[at async /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:21:2585][0m
+    at async Promise.all (index 1)
+    [2m[at async hr (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:21:2743)][0m
+    [2m[at async vn (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:32:2597)][0m
+    [2m[at async kn (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:3415)][0m
+    [2m[at async E (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/postcss/dist/index.js:10:3983)][0m {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'read'
+}
+Error: ETIMEDOUT: connection timed out, read
+    [2m[at async readFileHandle (node:internal/fs/promises:553:24)][0m
+    [2m[at async Vt (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:4328)][0m
+    [2m[at async loadStylesheet (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:2960)][0m
+    [2m[at async /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:21:2585][0m
+    at async Promise.all (index 0)
+    [2m[at async hr (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:21:2743)][0m
+    [2m[at async vn (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:32:2597)][0m
+    [2m[at async kn (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/node/dist/index.js:10:3415)][0m
+    [2m[at async E (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/@tailwindcss/postcss/dist/index.js:10:3983)][0m {
+  errno: -60,
+  code: 'ETIMEDOUT',
+  syscall: 'read'
+}
+Error: Can't resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'
+    [2m[at finishWithoutResolve (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:942:18)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1034:14][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m
+    [2m[at eval (eval at create (/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/node_modules/enhanced-resolve/lib/Resolver.js:1111:5][0m {
+  details: "resolve '../styles/fonts.css' in '/Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next'\n" +
+    '  using description file: /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/rosella-retreat-next/package.json (relative path: .)\n' +
+    '    No description file found in /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles or above\n' +
+    '    no extension\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist\n" +
+    '    .css\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css.css doesn't exist\n" +
+    '    as directory\n' +
+    "      /Users/diptaghnya/Desktop/Antigravity Files/Harshit_AirBNB/styles/fonts.css doesn't exist"
+}
+ GET / 200 in 17.3min (next.js: 17.3min, application-code: 461ms)
+[?25h

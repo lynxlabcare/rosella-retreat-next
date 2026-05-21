@@ -1,0 +1,118 @@
+/**
+ * globals.css — site-wide scroll resets + Rosella Retreat design tokens.
+ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Lenis smooth-scroll resets
+   ───────────────────────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: auto !important;
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+/* Hide the native scrollbar — Lenis's virtual scroll keeps it desynced */
+::-webkit-scrollbar { display: none; }
+html { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Custom cursor — hide the native cursor on fine-pointer (mouse) devices.
+   Touch/stylus devices keep their default cursor.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Rosella Retreat design tokens  (--rr-* namespace)
+   Two complete palettes: Dusk (default) and Night ([data-theme="night"]).
+   ───────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Surfaces ─────────────────────────────────── */
+  --rr-bg:            #F9F8F6; /* main page / section background    */
+  --rr-bg-alt:        #FFFFFF; /* alternate section bg (SocialProof)*/
+  --rr-surface:       #FFFFFF; /* card / panel surfaces              */
+  --rr-card-bg:       #F9F8F6; /* cards that sit inside white panels */
+
+  /* ── Typography ───────────────────────────────── */
+  --rr-text:          #2C3D30;
+  --rr-text-secondary:#4A4A4A;
+
+  /* ── Brand accent — intentionally unchanged ───── */
+  --rr-accent:        #C5A880;
+  --rr-accent-hover:  #b0946e;
+
+  /* ── Structural ───────────────────────────────── */
+  --rr-border:        rgba(44,  61,  48,  0.10);
+  --rr-border-light:  rgba(74,  74,  74,  0.10);
+  --rr-accent-bg-soft:rgba(44,  61,  48,  0.05);
+
+  /* ── Navigation ───────────────────────────────── */
+  --rr-nav-scrolled-bg: rgba(249, 248, 246, 0.90);
+  --rr-nav-text:        #2C3D30;
+
+  /* ── Footer ───────────────────────────────────── */
+  --rr-footer-bg:         #2C3D30;
+  --rr-footer-text:       #F9F8F6;
+  --rr-footer-text-muted: rgba(249, 248, 246, 0.65);
+  --rr-footer-border:     rgba(255, 255, 255, 0.10);
+}
+
+/* ── Night palette ──────────────────────────────────────────────────────────── */
+[data-theme="night"] {
+  --rr-bg:            #0D1512;
+  --rr-bg-alt:        #0A1210;
+  --rr-surface:       #141E1B;
+  --rr-card-bg:       #0D1512;
+
+  --rr-text:          #EAE4D8;
+  --rr-text-secondary:#968F85;
+
+  --rr-accent:        #C5A880;
+  --rr-accent-hover:  #b0946e;
+
+  --rr-border:        rgba(234, 228, 216, 0.12);
+  --rr-border-light:  rgba(234, 228, 216, 0.08);
+  --rr-accent-bg-soft:rgba(234, 228, 216, 0.04);
+
+  --rr-nav-scrolled-bg: rgba(13, 21, 18, 0.95);
+  --rr-nav-text:        #EAE4D8;
+
+  --rr-footer-bg:         #060E0B;
+  --rr-footer-text:       #EAE4D8;
+  --rr-footer-text-muted: rgba(234, 228, 216, 0.60);
+  --rr-footer-border:     rgba(234, 228, 216, 0.10);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Theme transition — smooth all background-color / color / border-color
+   changes triggered by the data-theme swap on <html>.
+   Duration matches the hero video crossfade (1.6 s) so everything lands
+   together. Skip the hero videos themselves — Motion owns those.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: 1.6s;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Restore instant transitions for interactive elements so hovers / clicks
+   feel snappy and aren't sluggish after theme changes. */
+button,
+a,
+input,
+[role="button"] {
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
