@@ -380,24 +380,45 @@ export function Hero() {
         onClick={toggle}
         aria-label="Toggle dusk and night environment"
         aria-pressed={isNight}
-        className="absolute top-[88px] right-6 md:top-auto md:bottom-14 md:right-auto md:left-12 z-40 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-full shadow-2xl flex items-center"
+        className="absolute top-[88px] right-6 min-[1100px]:top-auto min-[1100px]:bottom-14 min-[1100px]:right-auto min-[1100px]:left-12 z-40 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-full shadow-2xl flex items-center group"
       >
-        <span className="relative flex items-center h-11 w-11 md:w-auto px-1">
+        <span className="relative flex items-center justify-center h-11 w-11 min-[1446px]:w-auto px-1">
           <SunMoonKnob isNight={isNight} />
           <span
-            className={`relative z-10 font-['Montserrat'] text-[10px] tracking-[0.3em] uppercase pl-12 pr-4 transition-colors duration-500 hidden md:inline ${
+            className={`relative z-10 font-['Montserrat'] text-[10px] tracking-[0.3em] uppercase pl-12 pr-4 transition-colors duration-500 hidden min-[1446px]:inline ${
               !isNight ? "text-white" : "text-white/50"
             }`}
           >
             Dusk
           </span>
           <span
-            className={`relative z-10 font-['Montserrat'] text-[10px] tracking-[0.3em] uppercase pl-4 pr-12 transition-colors duration-500 hidden md:inline ${
+            className={`relative z-10 font-['Montserrat'] text-[10px] tracking-[0.3em] uppercase pl-4 pr-12 transition-colors duration-500 hidden min-[1446px]:inline ${
               isNight ? "text-white" : "text-white/50"
             }`}
           >
             Night
           </span>
+        </span>
+
+        {/* Tooltip — visible on md/lg (icon-only range) on hover, hidden on mobile and min-[1446px]+ */}
+        <span
+          aria-hidden="true"
+          className="
+            pointer-events-none
+            hidden min-[1100px]:flex min-[1446px]:hidden
+            absolute bottom-[calc(100%+10px)] left-1/2 -translate-x-1/2
+            whitespace-nowrap
+            bg-black/60 backdrop-blur-md
+            border border-white/15
+            rounded-full
+            px-3 py-1.5
+            font-['Montserrat'] text-[9px] tracking-[0.25em] uppercase text-white/80
+            opacity-0 group-hover:opacity-100
+            translate-y-1 group-hover:translate-y-0
+            transition-all duration-200 ease-out
+          "
+        >
+          Dusk · Night
         </span>
       </motion.button>
 

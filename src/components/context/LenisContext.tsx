@@ -110,8 +110,26 @@ export function LenisProvider({ children }: { children: ReactNode }) {
       gestureOrientation: 'vertical',
       smoothWheel: true,
       wheelMultiplier: 1.0,
+      lerp: 0.1,
       touchMultiplier: 1.5,
     });
+
+    let timeoutId: NodeJS.Timeout;
+
+    const handleWheel = (e: WheelEvent) => {
+      if (e.deltaMode === 1 || Math.abs(e.deltaY) > 50) {
+        lenis.options.wheelMultiplier = 0.6;
+        lenis.options.lerp = 0.08;
+
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          lenis.options.wheelMultiplier = 1.0;
+          lenis.options.lerp = 0.1;
+        }, 250);
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel, { passive: true });
 
     const onScroll = ({ scroll, progress }: LenisScrollEvent) => {
       scrollY.set(scroll);
@@ -122,6 +140,8 @@ export function LenisProvider({ children }: { children: ReactNode }) {
     lenisRef.current = lenis;
 
     return () => {
+      window.removeEventListener('wheel', handleWheel);
+      clearTimeout(timeoutId);
       lenis.off('scroll', onScroll);
       lenis.destroy();
       lenisRef.current = null;
