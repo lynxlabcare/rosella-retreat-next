@@ -16,9 +16,9 @@ export function Home() {
       <Hero />
       <TheVibe />
       <Interlude />
-      <Amenities />
-      <ChapterThree />
       <InsideLook />
+      <ChapterThree />
+      <Amenities />
       <Gallery />
       <SocialProof />
       <Footer />

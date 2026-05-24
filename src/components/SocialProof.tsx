@@ -649,7 +649,7 @@ export function SocialProof() {
               letterSpacing: "-0.03em",
             }}
           >
-            200<span style={{ color: "var(--rr-accent)" }}>+</span>
+            100<span style={{ color: "var(--rr-accent)" }}>+</span>
           </p>
           <p
             className="uppercase tracking-[0.45em] mt-4"
@@ -670,7 +670,7 @@ export function SocialProof() {
             Verified on
           </p>
           <div className="flex flex-col gap-2.5">
-            {["Airbnb", "Google", "Booking.com"].map((name) => (
+            {["Airbnb", "Google"].map((name) => (
               <div
                 key={name}
                 className="flex items-center gap-2.5 px-5 py-2 rounded-full border"

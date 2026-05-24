@@ -70,7 +70,7 @@ function ManifestoPanel({
             alt="A Symphony of Light and Space"
             fill
             className="object-cover object-center"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 1vw"
           />
           {/* bottom fade into bg */}
           <div

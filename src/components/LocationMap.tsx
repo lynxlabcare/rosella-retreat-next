@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, ZoomControl, Tooltip } from "react-lea
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-const center: [number, number] = [30.3900, 78.1089];
+const center: [number, number] = [30.3900, 78.108889];
 
 const customIcon = L.divIcon({
   className: "custom-luxury-pin",
@@ -103,7 +103,7 @@ export default function LocationMap() {
           position={center} 
           icon={customIcon}
           eventHandlers={{
-            click: () => window.open('https://www.google.com/maps/search/?api=1&query=30.3900,78.1089', '_blank')
+            click: () => window.open('https://www.google.com/maps/search/?api=1&query=30.3900,78.108889', '_blank')
           }}
         >
           <Tooltip direction="top" offset={[0, -12]} className="custom-tooltip">
@@ -114,7 +114,7 @@ export default function LocationMap() {
       </MapContainer>
 
       <button
-        onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=30.3900,78.1089', '_blank')}
+        onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=30.3900,78.108889', '_blank')}
         className="absolute top-4 right-4 z-[1000] bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 text-xs text-white tracking-widest uppercase transition-colors hover:bg-white/20 rounded-[2px]"
       >
         OPEN IN GOOGLE MAPS ↗

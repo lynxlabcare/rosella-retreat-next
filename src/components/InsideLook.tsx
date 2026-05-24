@@ -196,37 +196,37 @@ function RoomPanel({
 
   if (index === 0) {
     const end = 1 / total;
-    bgProgressMap      = [0, end - tLen, end, 1];
+    bgProgressMap = [0, end - tLen, end, 1];
     contentProgressMap = [0, end - tLen + dOffset, end + dOffset, 1];
-    clipMap            = [0, 0, 0, 0];
-    yMap               = [0, 0, -60, -60];
-    opacityMap         = [1, 1, 0, 0];
-    scaleMap           = [1, 1, 1.05, 1.05];
+    clipMap = [0, 0, 0, 0];
+    yMap = [0, 0, -60, -60];
+    opacityMap = [1, 1, 0, 0];
+    scaleMap = [1, 1, 1.05, 1.05];
   } else if (index === total - 1) {
     const start = (total - 1) / total;
-    bgProgressMap      = [0, start - tLen, start, 1];
+    bgProgressMap = [0, start - tLen, start, 1];
     contentProgressMap = [0, start - tLen + dOffset, start + dOffset, 1];
-    clipMap            = [100, 100, 0, 0];
-    yMap               = [60, 60, 0, 0];
-    opacityMap         = [0, 0, 1, 1];
-    scaleMap           = [1.05, 1.05, 1, 1];
+    clipMap = [100, 100, 0, 0];
+    yMap = [60, 60, 0, 0];
+    opacityMap = [0, 0, 1, 1];
+    scaleMap = [1.05, 1.05, 1, 1];
   } else {
     const start = index * (1 / total);
-    const end   = (index + 1) * (1 / total);
-    bgProgressMap      = [0, start - tLen, start, end - tLen, end, 1];
+    const end = (index + 1) * (1 / total);
+    bgProgressMap = [0, start - tLen, start, end - tLen, end, 1];
     contentProgressMap = [0, start - tLen + dOffset, start + dOffset, end - tLen + dOffset, end + dOffset, 1];
-    clipMap            = [100, 100, 0, 0, 0, 0];
-    yMap               = [60, 60, 0, 0, -60, -60];
-    opacityMap         = [0, 0, 1, 1, 0, 0];
-    scaleMap           = [1.05, 1.05, 1, 1, 1.05, 1.05];
+    clipMap = [100, 100, 0, 0, 0, 0];
+    yMap = [60, 60, 0, 0, -60, -60];
+    opacityMap = [0, 0, 1, 1, 0, 0];
+    scaleMap = [1.05, 1.05, 1, 1, 1.05, 1.05];
   }
 
-  const clipTop    = useTransform(progress, bgProgressMap, clipMap);
-  const clipPath   = useMotionTemplate`inset(${clipTop}% 0 0 0)`;
-  const yText      = useTransform(progress, contentProgressMap, yMap);
-  const textOp     = useTransform(progress, contentProgressMap, opacityMap);
-  const imgScale   = useTransform(progress, contentProgressMap, scaleMap);
-  const pEvents    = useTransform(clipTop, (v: number) => (v < 99 ? "auto" : "none"));
+  const clipTop = useTransform(progress, bgProgressMap, clipMap);
+  const clipPath = useMotionTemplate`inset(${clipTop}% 0 0 0)`;
+  const yText = useTransform(progress, contentProgressMap, yMap);
+  const textOp = useTransform(progress, contentProgressMap, opacityMap);
+  const imgScale = useTransform(progress, contentProgressMap, scaleMap);
+  const pEvents = useTransform(clipTop, (v: number) => (v < 99 ? "auto" : "none"));
 
   return (
     <motion.div

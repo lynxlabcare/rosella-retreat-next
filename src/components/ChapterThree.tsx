@@ -29,8 +29,9 @@ import { useTheme } from "./context/ThemeContext";
 // ─── Pull-quote copy ──────────────────────────────────────────────────────────
 
 const QUOTE_LINES = [
-  "Each suite,",
-  "a different silence.",
+  "Where the mountain air becomes memory,",
+  "and stillness becomes its own",
+  "kind of luxury.",
 ];
 
 // Flatten to word objects carrying their line index for stagger
@@ -231,7 +232,7 @@ export function ChapterThree() {
             className="text-[9px] uppercase tracking-[0.42em]"
             style={{ color: "var(--rr-text-secondary)" }}
           >
-            The Suites — Rosella Retreat
+            Rosella Retreat — Est. 2024
           </p>
         </motion.div>
 

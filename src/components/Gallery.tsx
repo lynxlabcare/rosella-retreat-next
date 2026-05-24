@@ -31,9 +31,9 @@ import Image from "next/image";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const CARD_W   = 480; // px — desktop card width
-const CARD_H   = 610; // px — desktop card height
-const OVERLAP  = 88;  // px — how much each card slides under the next (shingle)
+const CARD_W = 480; // px — desktop card width
+const CARD_H = 610; // px — desktop card height
+const OVERLAP = 88;  // px — how much each card slides under the next (shingle)
 
 // Dasharray sum for seamless dash-offset loop (14 dash + 7 gap = 21)
 const DASH_CYCLE = 21;
@@ -80,7 +80,7 @@ const IMAGES: GalleryImage[] = [
   },
   {
     src: "/Gallery_Carousel/Copy of Badminton.webp",
-    alt: "Rosella Retreat — Badminton court",
+    alt: "Rosella Retreat — Lawn Games",
   },
   {
     src: "/Gallery_Carousel/DSC_4760.webp",
@@ -156,15 +156,15 @@ function ReelCard({
     <motion.div
       className="relative flex-shrink-0 cursor-pointer overflow-hidden"
       style={{
-        width:       CARD_W,
-        height:      CARD_H,
+        width: CARD_W,
+        height: CARD_H,
         scale,
         opacity,
-        y:           yOffset,
+        y: yOffset,
         zIndex,
         marginRight: index < total - 1 ? -OVERLAP : 0,
         borderRadius: 4,
-        willChange:  "transform, opacity",
+        willChange: "transform, opacity",
       }}
       onClick={() => onOpen(index)}
     >
@@ -210,10 +210,10 @@ function ReelCard({
           >
             <p
               style={{
-                color:          "rgba(255,255,255,0.88)",
-                fontSize:       "10px",
-                letterSpacing:  "0.28em",
-                textTransform:  "uppercase",
+                color: "rgba(255,255,255,0.88)",
+                fontSize: "10px",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
               }}
             >
               {image.alt}
@@ -261,10 +261,10 @@ function ReelCard({
                 animate={{ strokeDashoffset: [0, -DASH_CYCLE] }}
                 transition={{
                   strokeDashoffset: {
-                    duration:    2.8,
-                    repeat:      Infinity,
-                    ease:        "linear",
-                    repeatType:  "loop",
+                    duration: 2.8,
+                    repeat: Infinity,
+                    ease: "linear",
+                    repeatType: "loop",
                   },
                 }}
               />
@@ -296,8 +296,8 @@ function MobileCard({
       viewport={{ once: true, amount: 0.12 }}
       transition={{
         duration: 0.95,
-        ease:     [0.16, 1, 0.3, 1],
-        delay:    (index % 2) * 0.08,
+        ease: [0.16, 1, 0.3, 1],
+        delay: (index % 2) * 0.08,
       }}
       onClick={() => onOpen(index)}
     >
@@ -318,8 +318,8 @@ function MobileCard({
       <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pointer-events-none">
         <p
           style={{
-            color:         "rgba(255,255,255,0.82)",
-            fontSize:      "9px",
+            color: "rgba(255,255,255,0.82)",
+            fontSize: "9px",
             letterSpacing: "0.25em",
             textTransform: "uppercase",
           }}
@@ -347,18 +347,18 @@ function Lightbox({
   onPrev,
   onJump,
 }: {
-  images:       GalleryImage[];
-  activeIndex:  number;
-  onClose:      () => void;
-  onNext:       () => void;
-  onPrev:       () => void;
-  onJump:       (i: number) => void;
+  images: GalleryImage[];
+  activeIndex: number;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
+  onJump: (i: number) => void;
 }) {
   const dragX = useMotionValue(0);
   const dragY = useMotionValue(0);
 
   const imgOpacity = useTransform(dragY, [-120, 0, 120], [0.3, 1, 0.3]);
-  const imgScale   = useTransform(dragY, [-120, 0, 120], [0.88, 1, 0.88]);
+  const imgScale = useTransform(dragY, [-120, 0, 120], [0.88, 1, 0.88]);
 
   // Reset drag on navigate
   useEffect(() => {
@@ -368,14 +368,14 @@ function Lightbox({
 
   // Arrow hint opacities
   const arrowRightOpacity = useTransform(dragX, [0, -40, -100], [0, 0.7, 1]);
-  const arrowLeftOpacity  = useTransform(dragX, [0,  40,  100], [0, 0.7, 1]);
+  const arrowLeftOpacity = useTransform(dragX, [0, 40, 100], [0, 0.7, 1]);
 
   // Keyboard nav
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape")     onClose();
+      if (e.key === "Escape") onClose();
       if (e.key === "ArrowRight") onNext();
-      if (e.key === "ArrowLeft")  onPrev();
+      if (e.key === "ArrowLeft") onPrev();
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -385,8 +385,8 @@ function Lightbox({
     (_: unknown, info: { offset: { x: number; y: number } }) => {
       const { x, y } = info.offset;
       if (Math.abs(y) > 80) { onClose(); return; }
-      if (x < -80)           { onNext();  return; }
-      if (x >  80)           { onPrev();  return; }
+      if (x < -80) { onNext(); return; }
+      if (x > 80) { onPrev(); return; }
     },
     [onClose, onNext, onPrev]
   );
@@ -489,8 +489,8 @@ function Lightbox({
             onClick={(e) => { e.stopPropagation(); onJump(i); }}
             className="rounded-full transition-all duration-300 cursor-pointer"
             style={{
-              width:           i === activeIndex ? 18 : 6,
-              height:          6,
+              width: i === activeIndex ? 18 : 6,
+              height: 6,
               backgroundColor: i === activeIndex ? "#C5A880" : "rgba(255,255,255,0.3)",
             }}
           />
@@ -503,8 +503,8 @@ function Lightbox({
 // ─── Gallery (main export) ────────────────────────────────────────────────────
 
 export function Gallery() {
-  const containerRef   = useRef<HTMLDivElement>(null);
-  const railRef        = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const railRef = useRef<HTMLDivElement>(null);
   const maxTranslateRef = useRef(0);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -515,7 +515,7 @@ export function Gallery() {
     const measure = () => {
       if (!railRef.current) return;
       const railW = railRef.current.scrollWidth;
-      const vw    = window.innerWidth;
+      const vw = window.innerWidth;
       maxTranslateRef.current = Math.max(0, railW - vw);
     };
 
@@ -543,26 +543,26 @@ export function Gallery() {
   });
 
   // ── Parallax background blobs ─────────────────────────────────────────────
-  const blob1X = useTransform(scrollYProgress, [0, 1], [0,  -220]);
-  const blob2X = useTransform(scrollYProgress, [0, 1], [0,   180]);
-  const blob1Y = useTransform(scrollYProgress, [0, 1], [0,   60]);
-  const blob2Y = useTransform(scrollYProgress, [0, 1], [0,  -50]);
+  const blob1X = useTransform(scrollYProgress, [0, 1], [0, -220]);
+  const blob2X = useTransform(scrollYProgress, [0, 1], [0, 180]);
+  const blob1Y = useTransform(scrollYProgress, [0, 1], [0, 60]);
+  const blob2Y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   // ── Hint opacity — fades after first scroll movement ─────────────────────
   const hintOpacity = useTransform(scrollYProgress, [0, 0.06], [1, 0]);
 
   // ── Cormorant counter labels ──────────────────────────────────────────────
   const currentLabel = String(activeIndex + 1).padStart(2, "0");
-  const totalLabel   = String(IMAGES.length).padStart(2, "0");
+  const totalLabel = String(IMAGES.length).padStart(2, "0");
 
   // ── Lightbox helpers ──────────────────────────────────────────────────────
-  const openLightbox  = useCallback((i: number) => setLightboxIndex(i), []);
+  const openLightbox = useCallback((i: number) => setLightboxIndex(i), []);
   const closeLightbox = useCallback(() => setLightboxIndex(null), []);
-  const nextImage     = useCallback(() =>
+  const nextImage = useCallback(() =>
     setLightboxIndex((i) => (i !== null && i < IMAGES.length - 1 ? i + 1 : i)), []);
-  const prevImage     = useCallback(() =>
+  const prevImage = useCallback(() =>
     setLightboxIndex((i) => (i !== null && i > 0 ? i - 1 : i)), []);
-  const jumpImage     = useCallback((i: number) => setLightboxIndex(i), []);
+  const jumpImage = useCallback((i: number) => setLightboxIndex(i), []);
 
   return (
     <section
@@ -577,12 +577,12 @@ export function Gallery() {
         <div className="px-6 mb-8">
           <p
             style={{
-              color:         "#C5A880",
-              fontSize:      "10px",
+              color: "#C5A880",
+              fontSize: "10px",
               letterSpacing: "0.35em",
               textTransform: "uppercase",
-              marginBottom:  "10px",
-              fontFamily:    "'Montserrat', sans-serif",
+              marginBottom: "10px",
+              fontFamily: "'Montserrat', sans-serif",
             }}
           >
             The Gallery
@@ -590,8 +590,8 @@ export function Gallery() {
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
-              color:      "var(--rr-text)",
-              fontSize:   "clamp(1.8rem, 7vw, 2.4rem)",
+              color: "var(--rr-text)",
+              fontSize: "clamp(1.8rem, 7vw, 2.4rem)",
               lineHeight: 1.12,
             }}
           >
@@ -628,9 +628,9 @@ export function Gallery() {
               <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pointer-events-none">
                 <p
                   style={{
-                    fontFamily:    "'Montserrat', sans-serif",
-                    color:         "rgba(255,255,255,0.9)",
-                    fontSize:      "9px",
+                    fontFamily: "'Montserrat', sans-serif",
+                    color: "rgba(255,255,255,0.9)",
+                    fontSize: "9px",
                     letterSpacing: "0.3em",
                     textTransform: "uppercase",
                   }}
@@ -650,9 +650,9 @@ export function Gallery() {
           <div className="w-8 h-[1px]" style={{ backgroundColor: "var(--rr-text)" }} />
           <p
             style={{
-              fontFamily:    "'Montserrat', sans-serif",
-              color:         "var(--rr-text)",
-              fontSize:      "9px",
+              fontFamily: "'Montserrat', sans-serif",
+              color: "var(--rr-text)",
+              fontSize: "9px",
               letterSpacing: "0.3em",
               textTransform: "uppercase",
             }}
@@ -681,29 +681,29 @@ export function Gallery() {
           <motion.div
             className="absolute pointer-events-none"
             style={{
-              top:        "-30%",
-              left:       "-18%",
-              width:      "72vw",
-              height:     "72vw",
+              top: "-30%",
+              left: "-18%",
+              width: "72vw",
+              height: "72vw",
               borderRadius: "50%",
               background: "radial-gradient(circle, rgba(44,61,48,0.20) 0%, transparent 68%)",
-              filter:     "blur(90px)",
-              x:          blob1X,
-              y:          blob1Y,
+              filter: "blur(90px)",
+              x: blob1X,
+              y: blob1Y,
             }}
           />
           <motion.div
             className="absolute pointer-events-none"
             style={{
-              bottom:     "-28%",
-              right:      "-16%",
-              width:      "58vw",
-              height:     "58vw",
+              bottom: "-28%",
+              right: "-16%",
+              width: "58vw",
+              height: "58vw",
               borderRadius: "50%",
               background: "radial-gradient(circle, rgba(197,168,128,0.13) 0%, transparent 68%)",
-              filter:     "blur(90px)",
-              x:          blob2X,
-              y:          blob2Y,
+              filter: "blur(90px)",
+              x: blob2X,
+              y: blob2Y,
             }}
           />
 
@@ -721,11 +721,11 @@ export function Gallery() {
             >
               <p
                 style={{
-                  color:         "#C5A880",
-                  fontSize:      "10px",
+                  color: "#C5A880",
+                  fontSize: "10px",
                   letterSpacing: "0.35em",
                   textTransform: "uppercase",
-                  marginBottom:  "8px",
+                  marginBottom: "8px",
                 }}
               >
                 The Gallery
@@ -733,8 +733,8 @@ export function Gallery() {
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  color:      "var(--rr-text)",
-                  fontSize:   "clamp(1.5rem, 2.2vw, 2.35rem)",
+                  color: "var(--rr-text)",
+                  fontSize: "clamp(1.5rem, 2.2vw, 2.35rem)",
                   lineHeight: 1.1,
                 }}
               >
@@ -753,18 +753,18 @@ export function Gallery() {
                   <motion.span
                     key={currentLabel}
                     style={{
-                      display:      "block",
-                      fontFamily:   "'Cormorant Garamond', 'Cormorant', 'Georgia', serif",
-                      color:        "var(--rr-text)",
-                      fontSize:     "clamp(5rem, 9vw, 10rem)",
-                      lineHeight:   0.9,
-                      opacity:      0.07,
+                      display: "block",
+                      fontFamily: "'Cormorant Garamond', 'Cormorant', 'Georgia', serif",
+                      color: "var(--rr-text)",
+                      fontSize: "clamp(5rem, 9vw, 10rem)",
+                      lineHeight: 0.9,
+                      opacity: 0.07,
                       letterSpacing: "-0.03em",
-                      fontWeight:   300,
+                      fontWeight: 300,
                     }}
                     initial={{ y: -24, opacity: 0 }}
-                    animate={{ y: 0,   opacity: 0.07 }}
-                    exit={{ y: 24,     opacity: 0 }}
+                    animate={{ y: 0, opacity: 0.07 }}
+                    exit={{ y: 24, opacity: 0 }}
                     transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
                   >
                     {currentLabel}
@@ -774,12 +774,12 @@ export function Gallery() {
                 {/* Small "/ 08" suffix */}
                 <p
                   style={{
-                    color:         "var(--rr-text)",
-                    opacity:       0.3,
-                    fontSize:      "11px",
+                    color: "var(--rr-text)",
+                    opacity: 0.3,
+                    fontSize: "11px",
                     letterSpacing: "0.22em",
-                    marginTop:     "6px",
-                    fontFamily:    "'Cormorant Garamond', serif",
+                    marginTop: "6px",
+                    fontFamily: "'Cormorant Garamond', serif",
                   }}
                 >
                   / {totalLabel}
@@ -797,12 +797,12 @@ export function Gallery() {
               <motion.p
                 key={activeIndex}
                 style={{
-                  fontFamily:    "'Cormorant Garamond', serif",
-                  color:         "var(--rr-text)",
-                  fontSize:      "clamp(0.7rem, 1vw, 0.85rem)",
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "var(--rr-text)",
+                  fontSize: "clamp(0.7rem, 1vw, 0.85rem)",
                   letterSpacing: "0.15em",
-                  opacity:       0.5,
-                  fontStyle:     "italic",
+                  opacity: 0.5,
+                  fontStyle: "italic",
                 }}
                 initial={{ opacity: 0, x: -8 }}
                 animate={{ opacity: 0.5, x: 0 }}
@@ -819,10 +819,10 @@ export function Gallery() {
             ref={railRef}
             className="absolute top-1/2 -translate-y-1/2 flex items-center"
             style={{
-              x:             xMv,
-              paddingLeft:   `calc(50vw - ${CARD_W / 2}px)`,
-              paddingRight:  `calc(50vw - ${CARD_W / 2}px)`,
-              willChange:    "transform",
+              x: xMv,
+              paddingLeft: `calc(50vw - ${CARD_W / 2}px)`,
+              paddingRight: `calc(50vw - ${CARD_W / 2}px)`,
+              willChange: "transform",
             }}
           >
             {IMAGES.map((img, i) => (
@@ -846,13 +846,13 @@ export function Gallery() {
             {/* Scroll-to-explore hint */}
             <motion.p
               style={{
-                opacity:       hintOpacity,
-                color:         "var(--rr-text)",
-                fontSize:      "9px",
+                opacity: hintOpacity,
+                color: "var(--rr-text)",
+                fontSize: "9px",
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                whiteSpace:    "nowrap",
-                flexShrink:    0,
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
               Scroll to explore
@@ -873,7 +873,7 @@ export function Gallery() {
                 className="absolute inset-0 origin-left"
                 style={{
                   backgroundColor: "#C5A880",
-                  scaleX:          scrollYProgress,
+                  scaleX: scrollYProgress,
                 }}
               />
             </div>
@@ -884,14 +884,14 @@ export function Gallery() {
                 <motion.div
                   key={i}
                   animate={{
-                    scaleY:  i === activeIndex ? 2.2 : 1,
+                    scaleY: i === activeIndex ? 2.2 : 1,
                     opacity: i === activeIndex ? 1 : 0.28,
                   }}
                   transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                   style={{
-                    width:           "2px",
-                    height:          "10px",
-                    borderRadius:    "1px",
+                    width: "2px",
+                    height: "10px",
+                    borderRadius: "1px",
                     transformOrigin: "center",
                     backgroundColor: i === activeIndex ? "#C5A880" : "var(--rr-text)",
                   }}

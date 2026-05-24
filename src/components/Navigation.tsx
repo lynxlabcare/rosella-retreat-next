@@ -39,33 +39,41 @@ export function Navigation() {
           borderColor: "var(--rr-border-light)",
         } : undefined}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-3 items-center">
+        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 flex justify-between items-center">
           {/* Logo - Left */}
           <div
-            className="font-['Playfair_Display'] text-xl md:text-2xl tracking-[0.15em] font-medium justify-self-start transition-colors duration-300"
+            className="font-['Playfair_Display'] text-xl md:text-2xl tracking-[0.15em] font-medium transition-colors duration-300 flex-shrink-0"
             style={{ color: isScrolled ? "var(--rr-nav-text)" : "rgba(255,255,255,0.9)" }}
           >
             ROSELLA RETREAT
           </div>
 
-          {/* Desktop Links - Center */}
-          <div className="hidden md:flex items-center justify-center space-x-12">
-            {NAV_LINKS.map((item) => (
+          {/* Navigation - Right */}
+          <div className="flex items-center">
+            {/* Desktop Links */}
+            <div className="hidden min-[1075px]:flex items-center space-x-8 lg:space-x-12">
+              {NAV_LINKS.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
+                  className="text-xs tracking-[0.2em] uppercase whitespace-nowrap transition-colors hover:text-[#C5A880]"
+                  style={{ color: isScrolled ? "var(--rr-text-secondary)" : "rgba(255,255,255,0.9)" }}
+                >
+                  {item}
+                </a>
+              ))}
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                href="/policies"
                 className="text-xs tracking-[0.2em] uppercase whitespace-nowrap transition-colors hover:text-[#C5A880]"
                 style={{ color: isScrolled ? "var(--rr-text-secondary)" : "rgba(255,255,255,0.9)" }}
               >
-                {item}
+                Villa Policies
               </a>
-            ))}
-          </div>
+            </div>
 
-          {/* Right side — hamburger / close */}
-          <div className="flex justify-end">
+            {/* Right side — hamburger / close */}
             <button
-              className="md:hidden transition-colors z-[110] relative"
+              className="min-[1075px]:hidden transition-colors z-[110] relative ml-4"
               style={{ color: isScrolled && !mobileMenuOpen ? "var(--rr-nav-text)" : "rgba(255,255,255,0.9)" }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -84,7 +92,7 @@ export function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="md:hidden fixed inset-0 z-[100] w-full h-[100svh] bg-black/40 backdrop-blur-2xl supports-[backdrop-filter]:bg-black/20 flex flex-col text-white"
+            className="min-[1075px]:hidden fixed inset-0 z-[100] w-full h-[100svh] bg-black/40 backdrop-blur-2xl supports-[backdrop-filter]:bg-black/20 flex flex-col text-white"
           >
             {/* Header row inside menu — logo + close */}
             <div className="flex justify-between items-center w-full px-6 py-6 md:px-12 md:py-8 border-b border-white/10">
@@ -115,6 +123,17 @@ export function Navigation() {
                   {item}
                 </motion.a>
               ))}
+              <motion.a
+                key="villa-policies"
+                href="/policies"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 + NAV_LINKS.length * 0.07, duration: 0.35, ease: "easeOut" }}
+                className="text-2xl tracking-[0.2em] uppercase font-['Montserrat'] text-white/80 hover:text-white transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Villa Policies
+              </motion.a>
             </div>
 
             {/* Subtle brass accent at the bottom */}

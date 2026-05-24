@@ -13,17 +13,17 @@ const MD_BREAKPOINT = "(min-width: 768px)";
  * This means mobile-specific branches must use CSS (display/visibility)
  * for structural changes, and JS gating only for Motion style objects.
  */
-export function useIsDesktop(): boolean {
+export function useIsDesktop(breakpoint: string = MD_BREAKPOINT): boolean {
   const [isDesktop, setIsDesktop] = useState(true); // SSR default = desktop
   const prefersReduced = useReducedMotion();
 
   useEffect(() => {
-    const mql = window.matchMedia(MD_BREAKPOINT);
+    const mql = window.matchMedia(breakpoint);
     const update = () => setIsDesktop(mql.matches);
     update();
     mql.addEventListener("change", update);
     return () => mql.removeEventListener("change", update);
-  }, []);
+  }, [breakpoint]);
 
   return isDesktop && !prefersReduced;
 }

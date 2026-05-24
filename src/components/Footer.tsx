@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, Instagram } from "lucide-react";
 import { motion, useInView, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { MagneticWrapper } from "./MagneticWrapper";
 import dynamic from "next/dynamic";
@@ -189,14 +189,6 @@ export function Footer() {
                 style={{ borderColor: "var(--rr-footer-border)" }}
               >
                 <Instagram size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-[#C5A880] hover:border-[#C5A880] transition-colors"
-                style={{ borderColor: "var(--rr-footer-border)" }}
-              >
-                <Facebook size={18} />
               </a>
             </div>
           </motion.div>
