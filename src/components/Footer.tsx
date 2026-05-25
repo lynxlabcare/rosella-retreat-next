@@ -5,10 +5,16 @@ import { motion, useInView, useScroll, useTransform, useReducedMotion } from "mo
 import { MagneticWrapper } from "./MagneticWrapper";
 import dynamic from "next/dynamic";
 
-const LocationMap = dynamic(() => import("./LocationMap"), { ssr: false });
+const LocationMap = dynamic(() => import("./LocationMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full" style={{ backgroundColor: "#1A251D" }} />
+});
 
 function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(true);
+  // Defaulting to false keeps server and initial client render in sync, 
+  // avoids a layout shift on mobile, and prevents desktop-only animations 
+  // from briefly initializing on mobile devices.
+  const [isDesktop, setIsDesktop] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
     const update = () => setIsDesktop(mq.matches);
@@ -144,13 +150,13 @@ export function Footer() {
 
           <motion.div
             className="relative w-full aspect-video md:aspect-[2/1] border p-2 group overflow-hidden rounded-2xl shadow-xl"
-            style={{ backgroundColor: "rgba(255,255,255,0.05)", borderColor: "var(--rr-footer-border)" }}
+            style={{ minHeight: 280, backgroundColor: "rgba(255,255,255,0.05)", borderColor: "var(--rr-footer-border)" }}
             initial={animate ? { clipPath: "inset(100% 0 0 0)" } : false}
             whileInView={animate ? { clipPath: "inset(0% 0 0 0)" } : undefined}
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 1.1, ease: EASE, delay: 0.3 }}
           >
-            <div className="w-full h-full relative rounded-xl overflow-hidden" style={{ backgroundColor: "#1A251D" }}>
+            <div className="absolute inset-2 rounded-xl overflow-hidden" style={{ backgroundColor: "#1A251D" }}>
               <LocationMap />
             </div>
           </motion.div>

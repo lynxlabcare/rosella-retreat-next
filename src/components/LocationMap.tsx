@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, ZoomControl, Tooltip } from "react-leaflet";
+import React, { useEffect, useState, useRef } from "react";
+import { MapContainer, TileLayer, Marker, ZoomControl, Tooltip, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -40,8 +40,36 @@ const customIcon = L.divIcon({
   iconAnchor: [12, 12],
 });
 
+function MapResizer({ containerRef }: { containerRef: React.RefObject<HTMLDivElement | null> }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const timeout0 = setTimeout(() => map.invalidateSize(), 0);
+    const timeout250 = setTimeout(() => map.invalidateSize(), 250);
+    const timeout600 = setTimeout(() => map.invalidateSize(), 600);
+
+    const resizeObserver = new ResizeObserver(() => {
+      map.invalidateSize();
+    });
+
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
+    }
+
+    return () => {
+      clearTimeout(timeout0);
+      clearTimeout(timeout250);
+      clearTimeout(timeout600);
+      resizeObserver.disconnect();
+    };
+  }, [map, containerRef]);
+
+  return null;
+}
+
 export default function LocationMap() {
   const [mounted, setMounted] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -50,7 +78,7 @@ export default function LocationMap() {
   if (!mounted) return null;
 
   return (
-    <div className="w-full h-full relative" style={{ zIndex: 0 }}>
+    <div ref={wrapperRef} className="absolute inset-0" style={{ zIndex: 0 }}>
       <style>{`
         .leaflet-container {
           width: 100%;
@@ -93,10 +121,11 @@ export default function LocationMap() {
         scrollWheelZoom={true}
         dragging={true}
         zoomControl={false}
+        style={{ height: '100%', width: '100%' }}
       >
+        <MapResizer containerRef={wrapperRef} />
         <TileLayer
-          className="luxury-tiles"
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         />
         <Marker 

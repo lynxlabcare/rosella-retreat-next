@@ -287,7 +287,7 @@ export function Hero() {
     <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Poster fallback so the hero is never blank, even if the video fails to load */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <Image src={POSTER_URL} alt="Rosella Retreat" fill priority className="object-cover" sizes="100vw" />
+        <Image src={POSTER_URL} alt="Rosella Retreat" fill priority={true} className="object-cover" sizes="100vw" />
       </div>
       {/* Dusk video - base layer, always playing */}
       <video

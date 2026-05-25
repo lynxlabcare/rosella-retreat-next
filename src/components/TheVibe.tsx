@@ -53,7 +53,7 @@ function ManifestoPanel({
           alt="A Symphony of Light and Space"
           fill
           className="object-cover"
-          sizes="50vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div
           className="absolute inset-0"
@@ -259,7 +259,7 @@ function EssencePanel({
           alt="Rosella dining experience"
           fill
           className="object-cover"
-          sizes="50vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div
           className="absolute inset-0 hidden md:block"
