@@ -38,15 +38,20 @@ async function scanAndCompress(dir) {
           const outputPath = path.join(dir, `${baseName}.webp`);
 
           try {
-            await sharp(fullPath)
+            const image = sharp(fullPath);
+            const metadata = await image.metadata();
+
+            await image
               .rotate()
-              .webp({ quality: 80 })
+              .resize({ width: 1920, withoutEnlargement: true })
+              .webp({ quality: 70, effort: 6, smartSubsample: false })
               .toFile(outputPath);
 
             const newStats = statSync(outputPath);
             const newSize = newStats.size;
 
             console.log(`[OK] ${path.relative(publicDir, fullPath)}`);
+            console.log(`     Width: ${metadata.width}px`);
             console.log(`     Size: ${formatSize(originalSize)} -> ${formatSize(newSize)}`);
           } catch (err) {
             console.error(`[ERROR] compressing ${fullPath}:`, err.message);

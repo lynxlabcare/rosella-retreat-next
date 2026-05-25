@@ -178,7 +178,7 @@ function ReelCard({
           alt={image.alt}
           fill
           className="object-cover block"
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 768px) 50vw, 33vw"
         />
       </motion.div>
 
@@ -306,7 +306,7 @@ function MobileCard({
         alt={image.alt}
         fill
         className="object-cover block"
-        sizes="(max-width: 768px) 100vw, 50vw"
+        sizes="(max-width: 768px) 50vw, 33vw"
       />
       <div
         className="absolute inset-0"
@@ -416,17 +416,23 @@ function Lightbox({
         className="relative max-w-[90vw] max-h-[86dvh] overflow-hidden shadow-2xl cursor-grab active:cursor-grabbing"
       >
         <AnimatePresence mode="wait" initial={false}>
-          <motion.img
+          <motion.div
             key={activeIndex}
-            src={image.src}
-            alt={image.alt}
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.02 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-[90vw] max-h-[86dvh] object-contain block select-none"
-            draggable={false}
-          />
+            className="relative w-[90vw] h-[86dvh]"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-contain block select-none"
+              sizes="90vw"
+              draggable={false}
+            />
+          </motion.div>
         </AnimatePresence>
 
         {/* Caption overlay */}
@@ -614,7 +620,7 @@ export function Gallery() {
                 alt={img.alt}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 50vw, 33vw"
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1512]/90 via-[#1A1512]/20 to-transparent opacity-80" />
