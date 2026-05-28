@@ -87,8 +87,24 @@ const IMAGES: GalleryImage[] = [
     alt: "Rosella Retreat — Dining area",
   },
   {
-    src: "https://images.unsplash.com/photo-1610952861479-94ed16e2757e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXNoJTIwZ3JlZW4lMjBtb3VudGFpbiUyMGZvZ3xlbnwxfHx8fDE3Nzg0MjQ0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    alt: "Rosella Retreat — Lush mountain fog",
+    src: "/Outdoor_Gallery.webp",
+    alt: "Rosella Retreat — Sunlit summits",
+  },
+  {
+    src: "/Gallery_Carousel/Bathroom 1.avif",
+    alt: "Rosella Retreat — Bathroom 1",
+  },
+  {
+    src: "/Gallery_Carousel/Bathroom 2.avif",
+    alt: "Rosella Retreat — Bathroom 2",
+  },
+  {
+    src: "/Gallery_Carousel/Batnroom 3.avif",
+    alt: "Rosella Retreat — Bathroom 3",
+  },
+  {
+    src: "/Gallery_Carousel/Bathroom 4.avif",
+    alt: "Rosella Retreat — Bathroom 4",
   },
 ];
 
@@ -671,12 +687,12 @@ export function Gallery() {
 
 
       {/* ════════════════════════════════════════════════════════════════════
-          DESKTOP — Horizontal Cinema Reel (580 vh pin)
+          DESKTOP — Horizontal Cinema Reel (772 vh pin)
       ════════════════════════════════════════════════════════════════════ */}
       <div
         ref={containerRef}
         className="hidden md:block relative"
-        style={{ height: "580vh" }}
+        style={{ height: "772vh" }}
       >
         {/* ── Sticky viewport ─────────────────────────────────────────────── */}
         <div

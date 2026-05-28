@@ -120,7 +120,7 @@ function ManifestoPanel({
           <em style={{ color: "var(--rr-accent)", fontStyle: "italic" }}>Light</em>{" "}and Space
         </h2>
         <p className="text-lg leading-relaxed mb-6 font-light" style={{ color: "var(--rr-text-secondary)" }}>
-          Accommodating up to 10 esteemed guests, Rosella Retreat is a sanctuary of modern refinement. Every corner in this 3BHK mansion is meticulously crafted to offer unparalleled privacy while embracing the natural splendour of Uttarakhand.
+          Accommodating up to 13 esteemed guests, Rosella Retreat is a sanctuary of modern refinement. Every corner in this 3BHK mansion is meticulously crafted to offer unparalleled privacy while embracing the natural splendour of Uttarakhand.
         </p>
         <p className="text-lg leading-relaxed mb-12 font-light" style={{ color: "var(--rr-text-secondary)" }}>
           From dawn-lit coffees on the expansive patio to twilight gatherings in our acoustically treated living spaces — staycation luxury, redefined.
@@ -210,7 +210,7 @@ function ImageryPanel({
           className="border-l-4 border-[#C5A880] pl-6 py-2 backdrop-blur-sm"
           style={{ backgroundColor: "rgba(197,168,128,0.06)" }}
         >
-          <p className="font-['Cormorant_Garamond'] text-4xl text-white mb-[2px]">10</p>
+          <p className="font-['Cormorant_Garamond'] text-4xl text-white mb-[2px]">10 + 3</p>
           <p className="text-[10px] uppercase tracking-[0.22em] text-white/65">
             Guests maximum
           </p>
@@ -231,7 +231,7 @@ function ImageryPanel({
 const STATS = [
   { value: "3", label: "Bedrooms" },
   { value: "3", label: "Bathrooms" },
-  { value: "10", label: "Guests" },
+  { value: "13", label: "Guests" },
   { value: "∞", label: "Views" },
 ];
 

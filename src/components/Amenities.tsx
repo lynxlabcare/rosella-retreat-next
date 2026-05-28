@@ -88,7 +88,7 @@ const AMENITIES: Amenity[] = [
     title: "Billiards with a View",
     description:
       "Unwind after a day of exploration with a game of billiards under the open sky. Set against a backdrop of breathtaking panoramic views, our masterfully crafted pool table provides the perfect atmosphere for friendly competition and sunset cocktails.",
-    image: "/Pool Table.webp",
+    image: "/Gallery_Carousel/Pool_Final.webp",
     accent: "Friendly competition",
   },
 ];
